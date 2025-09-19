@@ -3,18 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relogio Digital</title>
+    <title>Document</title>
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/cronometro.css">
 </head>
 <body>
-    
     <div class="relogio">
-        <h1>Relógio:</h1>
+        <h1>Cronômetro:</h1>
         <div class="temporizador">
-            <div>
-                <span id="horas">00</span>
-                <span id="tempo">Horas</span>
-            </div>
+            
             <div>
                 <span id="minutos">00</span>
                 <span id="tempo">Minutos</span>
@@ -23,21 +20,23 @@
                 <span id="segundos">00</span>
                 <span id="tempo">Segundos</span>
             </div>
+            <div>
+                <span id="milissegundos">00</span>
+                <span id="tempo" style="font-size: 13px;">Milissegundos</span>
+            </div>
         </div>
 
-    </div>
-    <div class="date">
-        <h2>Data:</h2>
-        <div>
-            <span id="dataAtual"></span>
-        </div>
         
     </div>
-    <a href="cronometro.html">
+        <button class="btn" onclick="start()">Começar</button>
+        <button class="btn" onclick="pause()">Pausar</button>
+        <button class="btn" onclick="reset()">Resetar</button>
+        <a href="cronometro.html">
             <button class="botaoTela">
-                Cronometro
+                Voltar
             </button>
         </a>
-    <script src="assets/js/scripts.js"></script>
+    <script src="assets/js/cronometro.js"></script>
+
 </body>
 </html>
